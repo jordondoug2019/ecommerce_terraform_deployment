@@ -24,6 +24,6 @@ sudo apt install python3.9-dev
 python3.9 -m venv venv
 source venv/bin/activate 
 pip install --upgrade pip
-cd backend
+cd /home/ubuntu/ecommerce_terraform_deployment/backend
 pip install -r requirements.txt
 python manage.py runserver 0.0.0.0:8000

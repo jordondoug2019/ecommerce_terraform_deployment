@@ -4,8 +4,24 @@ pipeline {
     stage ('Build') {
       steps {
         sh '''#!/bin/bash
-        <code to build the application>
-        '''
+         
+        // Backend build steps
+        dir('backend') {
+            sh '''
+            python3.9 -m venv venv
+            source venv/bin/activate
+            pip install -r requirements.txt
+            '''
+        }
+        
+        // Frontend build steps
+        dir('frontend') {
+            sh '''
+            export NODE_OPTIONS=--openssl-legacy-provider
+            npm start
+            npm i
+            '''
+        }
      }
    }
     stage ('Test') {

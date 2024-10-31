@@ -21,7 +21,8 @@ The purpose of this workload is to automate the deployment of an eCommerce appli
    - Ensures data transfer between services hosted in different VPCs.
 
 ## SYSTEM DESIGN DIAGRAM
-[ecommerce-terraform-deployment drawio](https://github.com/user-attachments/assets/5159bfba-a88b-4fed-b31b-ff8054f8e52a)
+![ecommerce-terraform-deployment drawio](https://github.com/user-attachments/assets/5c524016-3915-4fd7-a2d0-d732286ef834)
+
 
 
 ## ISSUES/TROUBLESHOOTING

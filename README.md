@@ -21,10 +21,8 @@ The purpose of this workload is to automate the deployment of an eCommerce appli
    - Ensures data transfer between services hosted in different VPCs.
 
 ## SYSTEM DESIGN DIAGRAM
-![System Design Diagram]![ecommerce-terraform-deployment drawio](https://github.com/user-attachments/assets/5159bfba-a88b-4fed-b31b-ff8054f8e52a)
+[ecommerce-terraform-deployment drawio](https://github.com/user-attachments/assets/5159bfba-a88b-4fed-b31b-ff8054f8e52a)
 
-
-*The System Design Diagram illustrates the architecture of the eCommerce application, showing how different components interact with each other.*
 
 ## ISSUES/TROUBLESHOOTING
 - **Connectivity Issues**: Experienced difficulties in connecting the Prometheus server to the Node Exporter due to VPC peering configurations. Ensured that security groups and network ACLs were properly configured.
